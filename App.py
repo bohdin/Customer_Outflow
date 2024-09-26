@@ -3,11 +3,11 @@ import numpy as np
 from tensorflow.keras.models import load_model
 import joblib
 
-rf_model = joblib.load('Data\\RandomForest_best_model.pkl')
-lr_model = joblib.load('Data\\LogisticRegression_best_model.pkl')
-svm_model = joblib.load('Data\\SVM_best_model.pkl')
-nn_model = load_model('Data\\NN_best_model.keras')
-scaler = joblib.load('Data\\scaler.pkl')
+rf_model = joblib.load('.\\Data\\RandomForest_best_model.pkl')
+lr_model = joblib.load('.\\Data\\LogisticRegression_best_model.pkl')
+svm_model = joblib.load('.\\Data\\SVM_best_model.pkl')
+nn_model = load_model('.\\Data\\NN_best_model.keras')
+scaler = joblib.load('.\\Data\\scaler.pkl')
 
 st.title('Прогноз відтоку клієнта')
 
